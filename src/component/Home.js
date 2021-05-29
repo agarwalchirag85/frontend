@@ -1,12 +1,10 @@
 import React from "react";
 import {Card} from "antd";
 import { withRouter } from "react-router";
-import data from '../data/data';
 import './Home.css';
 import ButtonC from './ButtonC';
 import ProgressC from './ProgressC';
 import ParentCards from "./ParentCard";
-import Thankyou from "./Thankyou";
 class Home extends React.Component
 {
     constructor(props) {

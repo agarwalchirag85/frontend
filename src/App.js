@@ -4,8 +4,7 @@ import {Route,Switch} from 'react-router-dom';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Herosection from './component/Herosection';
 import Home from './component/Home';
-import AfterClick from './component/AfterClick';
-import Thankyou from './component/Thankyou';
+
 class App extends React.Component {
 
   constructor()

@@ -1,9 +1,6 @@
-import React,{ useState } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 import {Card,Col,Radio,Input,Button,Modal} from "antd";
-import data from '../data/data';
-import Pledge from './Pledge';
-import ButtonC from "./ButtonC";
 import Thankyou from "./Thankyou";
 class AfterClick extends React.Component {
 
@@ -78,7 +75,7 @@ class AfterClick extends React.Component {
                              <div style={{ fontSize: "20px",fontWeight: "500",}}>{this.props.infos[0].left}
                              <span style={{ color: "darkgray", paddingLeft: "5px",fontSize: "12px"}}>left</span>
                              </div>
-                             <div>{ this.state.id_states == 2 ? ( <div>{"Enter your pledge"}<form onSubmit={this.handleSubmit}><Input prefix={'$'} value={this.state.value} onChange={this.handleChange} />
+                             <div>{ this.state.id_states === 2 ? ( <div>{"Enter your pledge"}<form onSubmit={this.handleSubmit}><Input prefix={'$'} value={this.state.value} onChange={this.handleChange} />
                              <Button shape="round" type="primary" style={{ background: "hsl(176, 50%, 60%)", border:"hsl(176, 50%, 47%)", borderRadius: "2em", color:"white",
                               padding: "0.50em 1em",width: "100%",height: "3em",fontSize: "0.90em",cursor: "pointer"}} hoverable = {true} htmlType="submit" >Continue</Button></form>
                              </div>) : ( <div></div>)
@@ -95,7 +92,7 @@ class AfterClick extends React.Component {
                              <div style={{ fontSize: "20px",fontWeight: "500",}}>{this.props.infos[1].left}
                              <span style={{ color: "darkgray", paddingLeft: "5px",fontSize: "12px"}}>left</span>
                             </div>
-                            <div>{ this.state.id_states == 3 ? ( <div>{"Enter your pledge"}<form onSubmit={this.handleSubmit}><Input prefix={'$'} value={this.state.value} onChange={this.handleChange} />
+                            <div>{ this.state.id_states === 3 ? ( <div>{"Enter your pledge"}<form onSubmit={this.handleSubmit}><Input prefix={'$'} value={this.state.value} onChange={this.handleChange} />
                              <Button shape="round" type="primary" style={{ background: "hsl(176, 50%, 60%)", border:"hsl(176, 50%, 47%)", borderRadius: "2em", color:"white",
                               padding: "0.50em 1em",width: "100%",height: "3em",fontSize: "0.90em",cursor: "pointer"}} hoverable = {true} htmlType="submit" >Continue</Button></form>
                              </div>) : ( <div></div>)

@@ -18,17 +18,17 @@ function Herosection()
                 </div>
                 <ul className={click?'nav-menu active':'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/link' className='nav-link' onClick={closeMobileMenu}>
+                        <Link to='/' className='nav-link' onClick={closeMobileMenu}>
                            About
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/Discover' className='nav-link' onClick={closeMobileMenu}>
+                        <Link to='/' className='nav-link' onClick={closeMobileMenu}>
                             Discover
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/Discover' className='nav-link' onClick={closeMobileMenu}>
+                        <Link to='/' className='nav-link' onClick={closeMobileMenu}>
                             Get Started
                         </Link>
                     </li>

@@ -1,7 +1,6 @@
 import React from "react";
 import {Card,Button} from "antd";
 import { withRouter } from "react-router";
-import ButtonC from "./ButtonC";
 
 class Thankyou extends React.Component {
 
